@@ -35,5 +35,4 @@ parallel -j 8 "singularity run \
       --omp-nthreads 10 \
       --output-space T1w template \
       --work-dir /workdir \
-      --notrack --fs-license-file /freesurfer_license.txt" \
-      ::: "01" "02" "03" "04" "05" "06" "07" "08"
+      --notrack --fs-license-file /freesurfer_license.txt" 
