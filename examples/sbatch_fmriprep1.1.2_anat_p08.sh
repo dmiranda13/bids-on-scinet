@@ -10,7 +10,7 @@ cd $SLURM_SUBMIT_DIR
 module load singularity
 module load gnu-parallel/20180322
 
-dataset="ds000003"
+dataset="COBRE"
 export freesurfer_license=$HOME/.licenses/freesurfer/license.txt
 
 ## build the mounts
