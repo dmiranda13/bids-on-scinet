@@ -12,7 +12,7 @@ module load gnu-parallel/20180322
 dataset="ds000003"
 
 ## put a freesurfer license file in your HOME so that this works!!!
-export freesufer_license=$HOME/.licenses/freesurfer/license.txt
+export freesurfer_license=$HOME/.licenses/freesurfer/license.txt
 
 ## set all the folder paths
 sing_home=$SCRATCH/sing_home/${dataset}              # this is where your logs will show up
@@ -29,7 +29,7 @@ cd ${indir}; ls -1d sub* | sed 's/sub-//g' | \
   -H ${sing_home} \
   -B ${indir}:/bids \
   -B ${outdir}:/output \
-  -B ${freesufer_license}:/freesurfer_license.txt \
+  -B ${freesurfer_license}:/freesurfer_license.txt \
   -B ${workdir}:/workdir \
   /scinet/course/ss2018/3_bm/2_imageanalysis/singularity_containers/poldracklab_fmriprep_1.1.2-2018-07-06-c9e7f793549f.img \
       /bids /output participant \
