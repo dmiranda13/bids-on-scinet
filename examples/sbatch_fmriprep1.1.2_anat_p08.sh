@@ -11,7 +11,7 @@ module load singularity
 module load gnu-parallel/20180322
 
 dataset="ds000003"
-export freesufer_license=$HOME/.licenses/freesurfer/license.txt
+export freesurfer_license=$HOME/.licenses/freesurfer/license.txt
 
 ## build the mounts
 sing_home=$SCRATCH/sing_home/fmriprep
@@ -25,7 +25,7 @@ parallel -j 8 "singularity run \
   -H ${sing_home} \
   -B $SCRATCH/datalad/${dataset}:/bids \
   -B ${outdir}:/output \
-  -B ${freesufer_license}:/freesurfer_license.txt \
+  -B ${freesurfer_license}:/freesurfer_license.txt \
   -B ${workdir}:/workdir \
   /scinet/course/ss2018/3_bm/2_imageanalysis/singularity_containers/poldracklab_fmriprep_1.1.2-2018-07-06-c9e7f793549f.img \
       /bids /output participant \
