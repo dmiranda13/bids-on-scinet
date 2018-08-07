@@ -23,7 +23,7 @@ mkdir -p ${sing_home} ${outdir} ${workdir}
 ## acutally running the tasks (note we are using gnu-parallel to run across participants)
 parallel -j 8 "singularity run \
   -H ${sing_home} \
-  -B $SCRATCH/datalad/${dataset}:/bids \
+  -B $SCRATCH/COBRE/COBRE_BIDS:/bids \
   -B ${outdir}:/output \
   -B ${freesurfer_license}:/freesurfer_license.txt \
   -B ${workdir}:/workdir \
