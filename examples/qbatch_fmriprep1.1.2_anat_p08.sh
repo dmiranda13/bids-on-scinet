@@ -16,7 +16,7 @@ export freesurfer_license=$HOME/.licenses/freesurfer/license.txt
 
 ## set all the folder paths
 sing_home=$SCRATCH/sing_home/${dataset}              # this is where your logs will show up
-indir=$SCRATCH/datalad/${dataset}     # this is you bids formatted input data
+indir=$SCRATCH/COBRE/COBRE_BIDS     # this is you bids formatted input data
 outdir=$SCRATCH/bids_outputs/${dataset}/fmriprep_q08  # this is the path to your output directory
 workdir=$BBUFFER/fmriprep_q08/${dataset}/      # this is where the fmriprep "working directory" goes..note we are using scinet's Burst Buffer for this
 
