@@ -9,7 +9,7 @@ source ${HOME}/code/bids-on-scinet/env/source_qbatch_python_env.sh
 module load gnu-parallel/20180322
 
 ## change this to the name of your dataset
-dataset="ds000003"
+dataset="COBRE_full"
 
 ## put a freesurfer license file in your HOME so that this works!!!
 export freesurfer_license=$HOME/.licenses/freesurfer/license.txt
@@ -46,4 +46,4 @@ cd ${indir}; ls -1d sub* | sed 's/sub-//g' | \
        --workdir $sing_home \
        --jobname ${dataset}_fmriprep_anat \
        --env none --header "module load singularity gnu-parallel/20180322" \
-       -
+       
