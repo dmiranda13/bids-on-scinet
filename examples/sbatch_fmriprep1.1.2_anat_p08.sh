@@ -36,7 +36,7 @@ parallel -j 8 "singularity run \
       --output-space T1w template \
       --work-dir /workdir \
       --notrack --fs-license-file /freesurfer_license.txt" 
-      ::: "sub-A00000300" "sub-A00014719" "sub-A00021081" "sub-A00024160" "sub-A00000368" "sub-A00014804" "sub-A00021085" "sub-A00024198"
+::: "sub-A00000300" "sub-A00014719" "sub-A00021081" "sub-A00024160" "sub-A00000368" "sub-A00014804" "sub-A00021085" "sub-A00024198"
       
                        
                  
