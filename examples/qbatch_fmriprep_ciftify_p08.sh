@@ -14,8 +14,8 @@ export freesufer_license=$HOME/.licenses/freesurfer/license.txt
 export ciftify_container=/scinet/course/ss2018/3_bm/2_imageanalysis/singularity_containers/tigrlab_fmriprep_ciftify_1.1.2-2.0.9-2018-07-31-d0ccd31e74c5.img
 
 ## build the mounts
-dataset="ds000003"
-bids_input=$SCRATCH/datalad/${dataset}
+dataset="COBRE_full"
+bids_input=$SCRATCH/COBRE/COBRE_BIDS
 sing_home=$SCRATCH/sing_home/ciftify/$dataset
 outdir=$SCRATCH/bids_outputs/${dataset}/fmriprep_p05
 workdir=$BBUFFER/fmriprep_p05/${dataset}
