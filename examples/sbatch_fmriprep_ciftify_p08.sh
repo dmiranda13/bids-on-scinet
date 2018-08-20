@@ -10,8 +10,8 @@ cd $SLURM_SUBMIT_DIR
 module load singularity
 module load gnu-parallel/20180322
 
-dataset="ds000003"
-bids_input=$SCRATCH/datalad/${dataset}
+dataset="COBRE"
+bids_input=$SCRATCH/COBRE/COBRE_BIDS
 export freesufer_license=$HOME/.licenses/freesurfer/license.txt
 export ciftify_container=/scinet/course/ss2018/3_bm/2_imageanalysis/singularity_containers/tigrlab_fmriprep_ciftify_1.1.2-2.0.9-2018-07-31-d0ccd31e74c5.img
 ## build the mounts
@@ -38,4 +38,4 @@ parallel -j 8 "singularity run \
       --fs-license /freesurfer_license.txt \
       --n_cpus 10 \
       --fmriprep-args='--use-aroma'" \
-      ::: "01" "02" "03" "04" "05" "06" "07" "08"
+      ::: "sub-A00000300" "sub-A00014719" "sub-A00021081" "sub-A00024160" "sub-A00000368" "sub-A00014804" "sub-A00021085" "sub-A00024198"
