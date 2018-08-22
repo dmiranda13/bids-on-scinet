@@ -38,4 +38,4 @@ parallel -j 8 "singularity run \
       --fs-license /freesurfer_license.txt \
       --n_cpus 10 \
       --fmriprep-args='--use-aroma'" \
-      ::: "sub-A00000300" "sub-A00014719" "sub-A00021081" "sub-A00024160" "sub-A00000368" "sub-A00014804" "sub-A00021085" "sub-A00024198"
+      ::: "A00000300" "A00014719" "A00021081" "A00024160" "A00000368" "A00014804" "A00021085" "A00024198"
