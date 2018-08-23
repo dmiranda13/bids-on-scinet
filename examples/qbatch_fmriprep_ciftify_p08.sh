@@ -17,7 +17,7 @@ export ciftify_container=/scinet/course/ss2018/3_bm/2_imageanalysis/singularity_
 dataset="COBRE_full"
 bids_input=$SCRATCH/COBRE/COBRE_BIDS
 sing_home=$SCRATCH/sing_home/ciftify/$dataset
-outdir=$SCRATCH/bids_outputs/${dataset}/fmriprep_p05
+outdir=$SCRATCH/bids_outputs/${dataset}/fmriprep_q08
 workdir=$BBUFFER/fmriprep_p05/${dataset}
 
 mkdir -p ${sing_home} ${outdir} ${workdir}
